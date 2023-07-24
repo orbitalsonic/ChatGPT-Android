@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ChatGPTAndroid</string>
+    <string name="send_a_message">Send a message</string>
+    <string name="todo">TODO</string>
+</resources>

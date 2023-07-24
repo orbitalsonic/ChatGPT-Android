@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "20840921317",
+    "project_id": "testing-projects-9e07b",
+    "storage_bucket": "testing-projects-9e07b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20840921317:android:bad5cde7be587b8edfbc0c",
+        "android_client_info": {
+          "package_name": "com.lampa.emotionrecognition"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20840921317-6cv4vqef2s4kb445engfeb08g0opl959.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWhASE9VzuLwgjleS5gf6U4lgO0ffe2Jw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20840921317-6cv4vqef2s4kb445engfeb08g0opl959.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20840921317:android:8c533481a06d2ccbdfbc0c",
+        "android_client_info": {
+          "package_name": "com.orbitalsonic.chatgpt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20840921317-6cv4vqef2s4kb445engfeb08g0opl959.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWhASE9VzuLwgjleS5gf6U4lgO0ffe2Jw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20840921317-6cv4vqef2s4kb445engfeb08g0opl959.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20840921317:android:449c34559bafd0a4dfbc0c",
+        "android_client_info": {
+          "package_name": "com.orbitalsonic.musicplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20840921317-6cv4vqef2s4kb445engfeb08g0opl959.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWhASE9VzuLwgjleS5gf6U4lgO0ffe2Jw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20840921317-6cv4vqef2s4kb445engfeb08g0opl959.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

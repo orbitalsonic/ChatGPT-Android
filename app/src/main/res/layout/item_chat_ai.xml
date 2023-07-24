@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="item"
+            type="com.orbitalsonic.chatgpt.roomdb.tables.ChatTable" />
+
+        <variable
+            name="itemClick"
+            type="com.orbitalsonic.chatgpt.helpers.interfaces.OnChatItemClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lang_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@{item.roleCheck ? @color/colorItem1Bg : @color/colorItem2Bg}"
+        tools:background="@color/colorItem1Bg"
+        android:paddingVertical="@dimen/_10sdp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_ai_role"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            app:imageDrawable="@{item.roleCheck ? @drawable/ic_ai_user : @drawable/ic_ai_bot}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:roundPercent="1"
+            tools:srcCompat="@drawable/ic_ai_bot"
+            android:contentDescription="@string/todo" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_ai_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{item.content}"
+            tools:textColor="@color/white"
+            android:textColor="@color/white"
+            android:paddingHorizontal="@dimen/_7sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center|start"
+            app:layout_constraintEnd_toStartOf="@+id/siv_done_item_language"
+            app:layout_constraintStart_toEndOf="@+id/iv_ai_role"
+            app:layout_constraintTop_toTopOf="@+id/iv_ai_role"
+            tools:text="Testing Ai Chat Testing Ai Chat Testing Ai Chat Testing Ai Chat Testing Ai Chat Testing Ai Chat Testing Ai Chat Testing Ai Chat Testing Ai Chat " />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/siv_done_item_language"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/ic_ai_copy"
+            android:visibility="@{item.roleCheck? View.GONE : View.VISIBLE}"
+            app:debounceClick="@{() -> itemClick.onItemCopy(item)}"
+            app:tint="@color/white"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

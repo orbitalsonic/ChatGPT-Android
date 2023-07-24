@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#16a180</color>
+    <color name="colorPrimaryVariant">#098265</color>
+    <color name="colorSecondary">#16a180</color>
+    <color name="colorSecondaryVariant">#098265</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="color_et_input">#40414f</color>
+    <color name="color_disable">#6b6c7b</color>
+    <color name="color_send">#19c37d</color>
+    <color name="colorItem1Bg">#343541</color>
+    <color name="colorItem2Bg">#444654</color>
+</resources>
